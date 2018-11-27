@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>Calculator</title>
+<script>
+function on()
+{
+var x=1;
+document.getElementById('txtnum').value+=x;
+}
+function tw()
+{
+var a=2;
+document.getElementById('txtnum').value+=a;
+}
+function t()
+{
+var b=3;
+document.getElementById('txtnum').value+=b;
+}
+function fo()
+{
+var c=4;
+document.getElementById('txtnum').value+=c;
+}
+function f()
+{
+var d=5;
+document.getElementById('txtnum').value+=d;
+}
+function si()
+{
+var e=6;
+document.getElementById('txtnum').value+=e;
+}
+function s()
+{
+var f=7;
+document.getElementById('txtnum').value+=f;
+}
+function e()
+{
+var g=8;
+document.getElementById('txtnum').value+=g;
+}
+function n()
+{
+var h=9;
+document.getElementById('txtnum').value+=h;
+}
+function o()
+{
+var i=0;
+document.getElementById('txtnum').value+=i;
+}
+function add()
+{
+document.getElementById('txtnum').value+='+';
+}
+function sub()
+{
+document.getElementById('txtnum').value+='-';
+}
+function div()
+{
+document.getElementById('txtnum').value+='/';
+}
+function mul()
+{
+document.getElementById('txtnum').value+='*';
+}
+function equal()
+{
+var m=eval(document.getElementById('txtnum').value);
+document.getElementById('txtnum').value=m;
+}
+function f1()
+{
+document.getElementById('txtnum').style.backgroundColor="red";
+window.setTimeout("f2()",100)
+}
+function f2()
+{
+document.getElementById('txtnum').style.backgroundColor="blue";
+window.setTimeout("f3()",100)
+}
+function f3()
+{
+document.getElementById('txtnum').style.backgroundColor="green";
+window.setTimeout("f4()",100)
+}
+function f4()
+{
+document.getElementById('txtnum').style.backgroundColor="yellow";
+window.setTimeout("f5()",100)
+}
+function f5()
+{
+document.getElementById('txtnum').style.backgroundColor="orange";
+window.setTimeout("f6()",100)
+}
+function f6()
+{
+document.getElementById('txtnum').style.backgroundColor="gray";
+window.setTimeout("f7()",100)
+}
+function f7()
+{
+document.getElementById('txtnum').style.backgroundColor="#cdb6e6";
+window.setTimeout("f1()",100)
+}
+</script>
+<style>
+#d
+{
+margin-top:20px;
+margin-left:550px;
+text-align:center;
+width:197px;
+height:312px;
+background-color:green;
+border:3px solid black;
+}
+td
+{
+border:1px groove black;
+padding:10px;
+cell-padding:2px;
+text-align:center;
+}
+table
+{
+color:green;
+background-color:#110c2f;
+border:2px dashed yellow;
+margin:5px;
+align:center;
+border-collapse:collapse;
+}
+button
+{
+border:none;
+color:white;
+background-color:black;
+}
+</style>
+</head>
+<body onload="f1()" id="b"> 
+<div id="d">
+<table>
+<tr>
+<td colspan="4">
+<h1>Calculator</h1><form>
+<textarea col="2" id="txtnum" id="txtnum" row="auto" placeholder="      dEmOn@137" style="border:none;color:white;text-shadow:3100px;" function="f1()"></textarea><br><br></td>
+</tr>
+<tr>
+<td><button type="button" onClick="on()">1</button></td>
+<td><button type="button" onClick="tw()">2</button></td>
+<td><button type="button" onClick="t()">3</button></td>
+<td><button type="button" onClick="add()">+</button></td>
+</tr>
+<tr>
+<td><button type="button" onClick="fo()">4</button></td>
+<td><button type="button" onClick="f()">5</button></td>
+<td><button type="button" onClick="si()">6</button></td>
+<td><button type="button" onClick="sub()">-</button></td>
+</tr>
+<tr>
+<td><button type="button" onClick="s()">7</button></td>
+<td><button type="button" onClick="e()">8</button></td>
+<td><button type="button" onClick="n()">9</button></td>
+<td><button type="button" onClick="div()">/</button></td>
+</tr>
+<tr>
+<td><button type="reset">CLR</button></td>
+<td><button type="button" onClick="o()">0</button></td>
+<td><button type="button" onClick="equal()">=</button</td>
+<td><button type="button" onClick="mul()">*</button></td>
+</tr>
+</form>
+</table>
+</div>
+</body>
+</html>
